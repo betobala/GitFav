@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #303030;
+
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: rgba(0, 0, 0, 1)
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  margin: 11.5rem 15rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8.7rem;
+}
+
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  height: 4.8rem;
+  border: 1px solid #ccc;
+  padding: 0 .8rem;
+  min-width: 46.2rem;
+  font-size: 1.6rem;
+
+  background: #06181C;
+  border-radius: 5px;
+
+  color: #7C7C8A;
+  border: none;
+}
+
+.search button {
+  background-color: rgba(6, 94, 124, 1);
+  border-radius: .5rem;
+  height: 4.8rem;
+  border: none;
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: white;
+}
+
+.search button:hover {
+  filter: brightness(1.1)
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  height: 12.2rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #4A808C;
+  border-radius: 1rem;
+  height: 2.2rem;
+}
+
+table {
+  
+    display: inline-block;
+    border-collapse: collapse;
+    border-radius: 1.2rem;
+    outline: 1px solid #4A808C;
+    width: 100%;
+}
+
+table * {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #E1E1E6
+}
+
+
+table tbody {
+  display: block;
+  max-height: 40rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+thead,
+tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table th {
+  background: rgba(9, 45, 56, 1);
+  text-align: left;
+  font-weight: normal;
+  padding: 2rem 4rem;
+  
+}
+
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table tr:nth-child(even) {
+  background: rgba(6, 22, 27, 0.5);
+}
+
+table tr:nth-child(odd) {
+  background: #06181C;
+}
+
+
+
+table td {
+  padding: 2rem 3.7rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+td.user img {
+  width: 6rem;
+  height: 6rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: rgba(247, 90, 104, 1);
+  cursor: pointer;
+}
